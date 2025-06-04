@@ -1,0 +1,60 @@
+@import url(reset.css);
+
+#results {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #73020c;
+    color: #ffffff;
+    border-radius: 0 0 6px 6px;
+    gap: 4rem;
+    padding: 0.5rem;
+
+    & h2 {
+        margin: 0;
+    }
+
+    & input {
+        width: 300px !important;
+    }
+}
+
+.container__search {
+    position: relative;
+
+    & button {
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+        background: none;
+        border: none;
+        color: #000000;
+        padding: 4px;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 16px;
+
+    & .container_left {
+        & img {
+            max-width: 600px;
+        }
+    }
+
+    & .info_right_div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
